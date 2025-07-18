@@ -1,0 +1,4 @@
+# Prediksi gaji
+if st.button("Prediksi Gaji"):
+    gaji = lin_reg_loaded.predict([[years_experience]])
+    st.write(f"Gaji seseorang setelah selama {years_experience} tahun adalah ${gaji[0]:,.2f}")
